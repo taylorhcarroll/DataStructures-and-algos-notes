@@ -33,9 +33,10 @@ function same(arr1, arr2) {
         if(correctIndex === -1) {
             return false
         }
-        arr2.splice(correctIndex,1)        
+        arr2.splice(correctIndex,1)
     }
     return true
 }
 same([1,2,3,2], [9,1,4,4])
 
+so the above is a nested loop solution. It works, but it isn't the best approach because it the O(n) is O
