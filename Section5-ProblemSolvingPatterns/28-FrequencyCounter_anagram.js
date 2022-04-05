@@ -38,8 +38,12 @@ function validAnagram(first, second) {
     return true;
 }
 
-// {a: 0, n: 0, g: 0, r: 0, m: 0,s:1}
-validAnagram('anagrams', 'nagaramm')
+// {a: 3, n: 1, g: 1, r: 1, m: 1, s:1}
+validAnagram('anagram', 'nagaram')
 
 validAnagram('', '')//true
 
+// The first loop is a breakdown of the first String, and put into a lookup Object.
+//If it already exists increment to get the count, otherwise initialize with a default value of 1.
+// The 2nd loop goes through our loopup object, and checks to see if it's in the lookUp object, and if it isn't return false, if it is, decrement
+// if we search through with a letter from second and the letter is already at 0, we also return false
