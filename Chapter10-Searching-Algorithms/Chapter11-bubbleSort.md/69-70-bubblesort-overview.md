@@ -145,4 +145,9 @@ function bubbleSort(arr){
 bubbleSort([8,1,2,3,4,5,6,7]);
 ```
 
-We make a variable called no swaps. And each time we go through we assume no swaps, until a swap actually happens then we set the variable to false because we made a swap.
+We make a variable called no swaps. And each time we go through we assume no swaps, until a swap actually happens then we set the variable to false because we made a swap. Just a small change but can really save a lot of time.
+
+Time complexity? In general it is O(n^2).
+
+However if data is sorted or nearly sorted, best case possible is O(n) or even O(2n). That's the best case, it doesn't mean you should use bubblesort very often or at all unless you know your data is **nearly sorted**. But even then there are probably better algos.
+
